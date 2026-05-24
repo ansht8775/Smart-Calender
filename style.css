@@ -1,0 +1,89 @@
+body{
+  margin:0;
+  padding:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+  font-family:Arial,sans-serif;
+}
+
+.container{
+  width:450px;
+  background:#111827;
+  border-radius:20px;
+  padding:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  color:white;
+}
+
+.header{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.header h1{
+  margin:0;
+  font-size:32px;
+}
+
+.header p{
+  color:#9ca3af;
+}
+
+#clock{
+  margin-top:10px;
+  font-size:24px;
+  color:#10b981;
+  font-weight:bold;
+}
+
+.calendar-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.calendar-header button{
+  background:#f59e0b;
+  border:none;
+  padding:10px 15px;
+  border-radius:10px;
+  cursor:pointer;
+  color:white;
+  font-size:18px;
+}
+
+.days,
+#calendar{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:10px;
+}
+
+.days div{
+  text-align:center;
+  font-weight:bold;
+  color:#fbbf24;
+}
+
+.date{
+  height:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#374151;
+  border-radius:10px;
+  transition:0.2s;
+}
+
+.date:hover{
+  background:#10b981;
+  transform:scale(1.05);
+}
+
+.today{
+  background:#ef4444;
+}
